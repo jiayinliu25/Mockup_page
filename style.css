@@ -1,0 +1,338 @@
+
+
+
+body {
+  background-image: url(images/Brooklyn2ndst.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color:#464646;
+
+}
+.titlepage {
+
+  width: 100%;
+  margin-left: calc((100% - 100vw) / 2);
+  height: 100vh;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  text-align: center;
+  vertical-align: middle;
+  }
+.arrow {
+  width: 15%;
+  padding-top: 10vw;
+}
+h1 {
+  font-family: 'Trebuchet MS', sans-serif;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: calc(55px + 0.390625vw);
+  line-height: 160%;
+  text-shadow: 0 0 5px #000000;
+}
+.sub-title {
+  font-family: 'Trebuchet MS', sans-serif;
+  text-align: center;
+  font-size: calc(15px + 0.390625vw);
+  line-height: 140%;
+  text-shadow: 0 0 5px #000000;
+  color: #FFFFFF;
+}
+
+.content {
+  width: 70%; /* Can be in percentage also. */
+  height: 25vh;
+  margin: 0 auto;
+  padding: 0px;
+  position: relative;
+  vertical-align: middle;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+
+}
+.section1 {
+  width: 100%;
+  margin-left: calc((100% - 100vw) / 2);
+  min-height: 800px;
+  height:auto!important;
+  height:800px;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  background-color:#464646;
+  padding-top: 150px;
+  padding-bottom: 80px;
+  display: flex;
+
+
+}
+.section1left {
+  width: 70%;
+
+}
+.section1right {
+  width: 30%;
+  padding-top: 10px;
+  padding-right: calc(90px + 0.390625vw);
+  padding-left: calc(60px + 0.390625vw);
+  overflow:scroll;
+}
+.section2 {
+  width: 100%;
+  margin-left: calc((100% - 100vw) / 2);
+  min-height: 600px;
+  height:auto!important;
+  height:800px;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  background-color:#DEDDDD;
+  padding-top: 80px;
+  padding-bottom: 250px;
+}
+#map2 {
+  width: 100%;
+  height: 600px;
+  vertical-align: middle;
+}
+.range {
+  position: relative;
+  width: 99%;
+  padding: 4px;
+}
+#slider {
+  margin-top: 5%;
+}
+.content-area {
+  position: relative;
+}
+.owl-carousel .owl-stage {
+  display: flex;
+  align-items: center;
+}
+.custom-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  opacity: 0;
+  transition: all 400ms east-in-out;
+  height: 100%;
+  padding: 20px;
+  vertical-align: middle;
+}
+.custom-overlay:hover {
+  opacity: 1;
+}
+.custom-overlay h2 {
+  font-size: 25px;
+  font-family: 'Prata', serif;
+  color: #000;
+  line-height: 50px;
+}
+.content-text {
+  font-size: 15px;
+  font-family: 'Raleway', sans-serif;
+  color: #000;
+}
+.section3 {
+  width: 100%;
+  margin-left: calc((100% - 100vw) / 2);
+  min-height: 800px;
+  height:auto!important;
+  height:800px;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  background-color:rgba(73, 73, 73, 0.8);
+  display: flex;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.section3left {
+  width: 70%;
+  padding: calc(15px + 0.390625vw);
+
+}
+.section3right {
+  flex-grow: 1;
+  padding-right: calc(90px + 0.390625vw);
+  padding-left: calc(90px + 0.390625vw);
+  padding-top: calc(60px + 0.390625vw);
+
+
+}
+.blueprint {
+  max-inline-size: 100%;
+  block-size: auto;
+  min-height: 700px;
+  min-width: 600px;
+}
+.section4 {
+  width: 100%;
+  margin-left: calc((100% - 100vw) / 2);
+  height: 600px;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  background-color:#474747;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  display: flex;
+}
+#map4 {
+  width: 100%;
+  height: 100%;
+}
+.section4left {
+  width: 30%;
+  padding-right: 0px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 60px;
+}
+.section4right {
+  flex-grow: 1;
+}
+.section5 {
+  width: 100%;
+  margin-left: calc((100% - 100vw) / 2);
+  height: 800px;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  background-color:#DEDDDD;
+  padding-top: 80px;
+  padding-bottom: 0px;
+}
+
+
+:root {
+  --plyr-color-main: #474747;
+}
+
+.zoom-out {
+  perspective: 800px;
+  height: 80vw;
+}
+
+@media (min-width: 400px) {
+  .zoom-out {
+    height: 300px;
+  }
+}
+
+.zoom-out__slide div {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.zoom-out__slide img {
+  background-color: transparent;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  -webkit-transform: translateY(-50%) translateX(-50%);
+}
+
+.section3right button {
+  background-color: #8C8C8C;
+  font-family: 'Raleway', sans-serif;
+  border: none;
+  color: white;
+  padding: 20px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+}
+.section5text {
+  text-align: center;
+}
+.section5text button {
+  background-color: #474747;
+  font-family: 'Raleway', sans-serif;
+  border: none;
+  color: white;
+  padding: 20px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+}
+.section6 {
+  width: 100%;
+  margin-left: calc((100% - 100vw) / 2);
+  height: 600px;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  background-color:rgba(73, 73, 73, 0.8);
+  display: flex;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+}
+.section6left {
+  width: 50%;
+  padding-right: 0px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 60px;
+}
+.section6right {
+  flex-grow: 1;
+  padding-left: 50px;
+  padding-right: 60px;
+  padding-top: 80px;
+}
+.video-js{
+  max-width: 45vw;
+  max-height: 45vh;
+    color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+.video-js .vjs-control-bar {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #474747;
+  color: white;
+  width: 100vw;
+  margin-left: calc((100% - 100vw) / 2);
+}
+@media screen and ( max-width: 800px ) {
+        .section1 { flex-direction: column;}
+        .section1left {
+          width: 100%;
+        }
+        .section1right {
+          width: 100%;
+        }
+        .section3 { flex-direction: column;}
+        .section3left {
+          width: 100%;
+        }
+        .section3right {
+          width: 100%;
+        }
+        .blueprint {
+          min-height: 500px;
+          min-width: 400px;}
+}
