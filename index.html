@@ -177,7 +177,7 @@
     <!-- Fourth Section with 2D leaflet map viewer demo (toggle housing condition and coloured WMS) and Plyr Audio player -->
     <div class="section4">
       <div class ="section4left">
-        <h4 style="color: #B5B5B5; font-size:calc(20px + 0.390625vw); font-family: 'Roboto Mono', monospace;">HOUSING CONDITIONS</h4>
+        <h4 style="color: #B5B5B5; font-size:calc(20px + 0.390625vw); font-family: 'Roboto Mono', monospace;">Land Type</h4>
         <audio id="player" controls>
             <source src="assets/rain.wav" type="audio/wav" />
         </audio>
@@ -385,45 +385,45 @@
       var wms_buildings_4 = new L.tileLayer.wms(
         "http://virtualblackcharlotte.net/geoserver/Charlotte/wms",
         {
-          layers: "Charlotte:Buildings_housingCondition",
+          layers: "Charlotte:land_type_building",
           format: "image/png",
           transparent: true,
-          CQL_FILTER: "Housing_co = 'Dilapidated'"
+          CQL_FILTER: "Land_type = 'Commercial'"
         }
       );
       //wms_buildings_4.setParams({ CQL_FILTER: "Housing_co = 'Dilapidated'" });
       var wms_buildingm = new L.tileLayer.wms(
         "http://virtualblackcharlotte.net/geoserver/Charlotte/wms",
         {
-          layers: "Charlotte:Buildings_housingCondition",
+          layers: "Charlotte:land_type_building",
           format: "image/png",
           transparent: true,
-          CQL_FILTER: "Housing_co = 'Major Repair'"
+          CQL_FILTER: "Land_type = 'Mixed Use'"
         }
       );
       var wms_buildingmi = new L.tileLayer.wms(
         "http://virtualblackcharlotte.net/geoserver/Charlotte/wms",
         {
-          layers: "Charlotte:Buildings_housingCondition",
+          layers: "Charlotte:land_type_building",
           format: "image/png",
           transparent: true,
-          CQL_FILTER: "Housing_co = 'Minor Repair'"
+          CQL_FILTER: "Land_type = 'Public and Semi-Public'"
         }
       );
       var wms_buildingss = new L.tileLayer.wms(
         "http://virtualblackcharlotte.net/geoserver/Charlotte/wms",
         {
-          layers: "Charlotte:Buildings_housingCondition",
+          layers: "Charlotte:land_type_building",
           format: "image/png",
           transparent: true,
-          CQL_FILTER: "Housing_co = 'Standard'"
+          CQL_FILTER: "Land_type = 'Residential'"
         }
       );
       var overlays4 = {
-        Dilapidated: wms_buildings_4,
-        Major_Repair: wms_buildingm,
-        Minor_Repair: wms_buildingmi,
-        Standard: wms_buildingss
+        Commercial: wms_buildings_4,
+        Mixed_Use: wms_buildingm,
+        Public_and_Semi_Public: wms_buildingmi,
+        Residential: wms_buildingss
       };
       L.control
         .layers(null, overlays4, {
